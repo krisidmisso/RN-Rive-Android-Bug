@@ -23,6 +23,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Rive from 'rive-react-native';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -69,6 +70,7 @@ function App(): React.JSX.Element {
    *
    * You can read more about it here:
    * https://github.com/react-native-community/discussions-and-proposals/discussions/827
+   * https://raw.githubusercontent.com/krisidmisso/RN-Rive-Android-Bug/refs/heads/main/rive/testButton.riv
    */
   const safePadding = '5%';
 
@@ -78,33 +80,10 @@ function App(): React.JSX.Element {
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
       />
-      <ScrollView
-        style={backgroundStyle}>
-        <View style={{paddingRight: safePadding}}>
-          <Header/>
-        </View>
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-            paddingHorizontal: safePadding,
-            paddingBottom: safePadding,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
+      <Rive  url="https://raw.githubusercontent.com/krisidmisso/RN-Rive-Android-Bug/refs/heads/main/rive/testButton.riv"
+        artboardName="Artboard"
+      stateMachineName="State Machine"
+        style={{width: 400, height: 400}} />
     </View>
   );
 }

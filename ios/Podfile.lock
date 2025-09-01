@@ -1654,6 +1654,10 @@ PODS:
     - React-logger (= 0.79.3)
     - React-perflogger (= 0.79.3)
     - React-utils (= 0.79.3)
+  - rive-react-native (9.5.0):
+    - React-Core
+    - RiveRuntime (= 6.11.1)
+  - RiveRuntime (6.11.1)
   - SocketRocket (0.7.1)
   - Yoga (0.0.0)
 
@@ -1729,10 +1733,12 @@ DEPENDENCIES:
   - ReactAppDependencyProvider (from `build/generated/ios`)
   - ReactCodegen (from `build/generated/ios`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - rive-react-native (from `../node_modules/rive-react-native`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
+    - RiveRuntime
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -1875,6 +1881,8 @@ EXTERNAL SOURCES:
     :path: build/generated/ios
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  rive-react-native:
+    :path: "../node_modules/rive-react-native"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -1923,14 +1931,14 @@ SPEC CHECKSUMS:
   React-performancetimeline: 064f2767a5d4d71547ea32a3cd8a76a101dfd11f
   React-RCTActionSheet: c89c8b9b7c3ef87cb6a67e20f5eaea271f4b5f67
   React-RCTAnimation: e00af558ccb5fedd380ae32329be4c38e92e9b90
-  React-RCTAppDelegate: 1df065b61dfb2bce0b7766a21e2e8083f2bdbe84
+  React-RCTAppDelegate: 10d98d4867643322fa4fcd04548359ac88c74656
   React-RCTBlob: ef645bccf9c33d3b4391794983744da897474dfb
-  React-RCTFabric: 78cee830ffa7a77368396117ea30481867ca657b
-  React-RCTFBReactNativeSpec: 330bd0d053d844b14bbf0e3834abae7b30be321a
+  React-RCTFabric: 06ff9416fc48742bba58ed81a0d0a62bf0f8c7ec
+  React-RCTFBReactNativeSpec: e0942c2c7efa10303c63e287c1c1788aeb6d99ef
   React-RCTImage: 0e3669a0bda8995874736d0f8f12c21d522df3c4
   React-RCTLinking: bd81ec3d1b6686a7c58bc8ed8b7a1f05ff2b3f8b
   React-RCTNetwork: 20b8044841a043b80e7027e1bc4049ffa552d1fa
-  React-RCTRuntime: 2ded44ae179f2fcc2624305a045c4c97fe96c5e9
+  React-RCTRuntime: 0084733b33619670bea35cb02c96412d9271718e
   React-RCTSettings: fa1d3e6c302e9980b5670315e2ccc998255ce32a
   React-RCTText: 71f01a9261c015b76702e9d7a4153c9ca45f2341
   React-RCTVibration: 0e05fa4647ec1391c409fcc1cbd7cdb4894d80ef
@@ -1948,9 +1956,11 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: e6d0c3c3cc9862a3ccef0c252835cd7ccb96313d
   ReactCodegen: c2f2ec5dd32215237420bedebae0e66867e1e8ea
   ReactCommon: e243aa261effc83c10208f0794bade55ca9ae5b6
+  rive-react-native: 9e05a263d7d5325c710128d234dc48820b3b4323
+  RiveRuntime: 3a34dd73b2d486558f3077af408b3b2734653f3f
   SocketRocket: d4aabe649be1e368d1318fdf28a022d714d65748
-  Yoga: 645152fcc8359c80cdeb9be7a9e0d2e6c01304a4
+  Yoga: 29f74a5b77dca8c37669e1e1e867e5f4e12407df
 
 PODFILE CHECKSUM: e5627496edf83645fe2588cb3842913f83b82927
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2
