@@ -83,7 +83,7 @@ function App(): React.JSX.Element {
       <Rive  url="https://raw.githubusercontent.com/krisidmisso/RN-Rive-Android-Bug/refs/heads/main/rive/testButton.riv"
         artboardName="Artboard"
       stateMachineName="State Machine"
-        style={{width: 400, height: 400}} />
+        style={{width: 250, height: 250}} />
     </View>
   );
 }
